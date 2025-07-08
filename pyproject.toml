@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "detect-qt-binding"
+version = "0.1.0-a0"
+description = "A lightweight utility to automatically detect which Qt Python binding is available in your environment."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "enum34; python_version < '3.4'",
+    "typing; python_version < '3.5'",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/detect-qt-binding"
+"Bug Tracker" = "https://github.com/jifengwu2k/detect-qt-binding/issues"
